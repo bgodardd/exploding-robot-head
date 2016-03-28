@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-
+  display: block;
   font: normal 100%/1.5 sans-serif;
 }
 
@@ -15,10 +15,15 @@ body {
 
 .banner {
   background-color: #2b3851;
+  display: block;
 }
 
 .robot {
   width: 320px;
+  display: block;
+  padding-top: 4rem;
+  margin: 0;
+  position: relative;
 }
 
 .robot-body {
@@ -35,4 +40,28 @@ body {
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+}
+
+.robot-head-right {
+  position: absolute;
+  top: 1.6rem;
+  left: 9.9rem;
+}
+
+.robot-head-left {
+  position: absolute;
+  top: 1.6rem;
+  right: 9.95rem;
+}
+
+.robot-head-left:hover {
+  position: absolute;
+  top: 1.6rem;
+  right: 16rem;
+}
+
+.robot-head-right:hover {
+  position: absolute;
+  top: 1.6rem;
+  left: 16rem;
 }
